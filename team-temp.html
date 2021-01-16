@@ -7,17 +7,42 @@
 <body>
     <h1>Temperature Scale Convertor</h1>
 
-    <div id="container">
-    <p>Fahrenheit</p>
-    <div id="container2">
-        <label for="value">Value</label>
-        <input type="text" id="value">
-    </div>
-    <button type="button" id="buttonId">Calculate</button>
+    <div class="container">
+        <div class="container2">
+            <label for="scale">Scale</label>
+            <select id="scale" name="scale">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option>
+                <option value="rankine">Rankine</option>
+            </select>
+        </div>
+        <div class="container2">
+            <label for="value">Value</label>
+            <input type="text" id="value">
+        </div>
+        <button type="button" id="buttonId">Calculate</button>
     </div>
     
-    <p><strong>Celsius</strong></p>
-    <p id="result"></p> 
+    <div class="container">
+        <div class="container2">
+            <p><strong>Fahrenheit</strong></p>
+            <p id="fahrenheitResult"></p> 
+        </div>
+        <div class="container2">
+            <p><strong>Celsius</strong></p>
+            <p id="celsiusResult"></p>
+        </div>
+        <div class="container2">
+            <p><strong>Kelvin</strong></p>
+            <p id="kelvinResult"></p>
+        </div>
+        <div class="container2">
+            <p><strong>Rankine</strong></p>
+            <p id="rankineResult"></p>
+        </div>
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
