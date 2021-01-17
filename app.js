@@ -11,12 +11,12 @@ function calculate() {
     if(scale == "fahrenheit") {
         fahrenheitResult.innerHTML = value + " F";
         let celsius = (value - 32) * 5.0 / 9.0;
-        celsiusResult.innerHTML = celsius + " C";
+        celsiusResult.innerHTML = celsius.toFixed(2) + " C";
         kelvinResult.innerHTML = (celsius + 273.15).toFixed(2) + " K";
         rankineResult.innerHTML = (parseFloat(value) + 459.67).toFixed(2);
     } else if (scale == "celsius") {
         let fahrenheit = value * 9.0 / 5.0 + 32;
-        fahrenheitResult.innerHTML = fahrenheit + " F";
+        fahrenheitResult.innerHTML = fahrenheit.toFixed(2) + " F";
         celsiusResult.innerHTML = value + " C";
         kelvinResult.innerHTML = (parseFloat(value) + 273.15).toFixed(2) + " K";
         rankineResult.innerHTML = (fahrenheit + 459.67).toFixed(2) + " R";
